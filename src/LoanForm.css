@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.loanFormDiv{
+    background-color: rgba(121, 121, 121, 0.397);
+    margin: 0 1rem;
+}
+
+.loanForm{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    height: 40vh;
+}
+
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 25%;
+}
+
+.loanLabel{
+    color: black;
+    font-weight: 600;
+}
+
+.inputField{
+    border: none;
+    height: 35%;
+    width: 65%;
+}
+
+.submitDiv{
+    background-color: rgba(78, 78, 110, 0.288);
+}
+
+.loanSubmitButton{
+    border: none;
+    width: 40%;
+    height: 60%;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+}

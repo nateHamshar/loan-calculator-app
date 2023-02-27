@@ -1,21 +1,23 @@
+import "./LoanForm.css";
+
 const LoanForm = () => {
     return (
         <div className="loanFormDiv">
             <form action="" className="loanForm">
-                <div className="inputField">
-                    <label htmlFor="loanAmount" className="loanAmountLabel">What size is the loan, excluding commas?</label>
-                    <input id="loanAmount" required type="number" min="0" step="0.01" className="loanAmount" />
+                <div className="inputDiv">
+                    <label htmlFor="loanAmount" className="loanLabel">What size is the loan, excluding commas?</label>
+                    <input id="loanAmount" required type="number" min="0" step="0.01" className="loanAmount inputField" />
                 </div>
-                <div className="inputField">
-                    <label htmlFor="loanLength" className="loanLengthLabel">What is the length of the loan in years?</label>
-                    <input id="loanLength" required type="number" min="0" step="0.1" className="loanLengthInput" />
+                <div className="inputDiv">
+                    <label htmlFor="loanLength" className="loanLabel">What is the length of the loan in years?</label>
+                    <input id="loanLength" required type="number" min="0" step="0.1" className="loanLengthInput inputField" />
                 </div>
-                <div className="inputField">
-                    <label htmlFor="loanInterest" className="loanInterestLabel">What is the interest rate? (ex 3.54)</label>
-                    <input id="loanInterest" required type="number" step=".01" className="loanInterest" />
+                <div className="inputDiv">
+                    <label htmlFor="loanInterest" className="loanLabel">What is the interest rate? (ex 3.54)</label>
+                    <input id="loanInterest" required type="number" step=".01" className="loanInterest inputField" />
                 </div>
-                <div className="inputField">
-                <input type="submit" id="loanSumbitButtom" className="loanSubmitButton"/>
+                <div className="inputDiv submitDiv">
+                <input type="" id="loanSumbitButtom" className="loanSubmitButton" value="Calculate"></input>
                 </div>
             </form>
         </div>
