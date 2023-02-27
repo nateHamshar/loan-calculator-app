@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.introDiv{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introHeader{
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: darkblue;
+}
+
+.introDescription{
+    width: 95%;
+    text-indent: 1rem;
+    font-weight: 600;
+    font-size: .8rem;
+    line-height: 1.25rem;
+}
