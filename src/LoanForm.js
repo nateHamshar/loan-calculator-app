@@ -5,20 +5,21 @@ import "./LoanForm.css";
 
 const LoanForm = ({dataObject}) => {
 
-
-    const [principal, setPrincipal] = useState();
-    const [length, setLength] = useState();
-    const [rate, setRate] = useState();
+    const [displayData, setDisplayData] = useState(false);
+    const [principal, setPrincipal] = useState(0);
+    const [length, setLength] = useState(0);
+    const [rate, setRate] = useState(0);
 
     const calculatePayments = () => {
         setPrincipal(document.getElementById("loanAmount").value);
-        setLength((document.getElementById("loanLength").value) * 12);
+        setLength(document.getElementById("loanLength").value);
         setRate((document.getElementById("loanInterest").value) / 100);
+        setDisplayData(true);
     }
     return (
         <div className="all">
         <div className="loanFormDiv">
-            <form action="#" className="loanForm">
+            <form action="/" className="loanForm">
                 <div className="inputDiv">
                     <label htmlFor="loanAmount" className="loanLabel">What size is the loan, excluding commas?</label>
                     <input id="loanAmount" required type="number" min="0" step="0.01" className="loanAmount inputField" />
@@ -36,8 +37,16 @@ const LoanForm = ({dataObject}) => {
                 </div>
             </form>
         </div>
-        <DataNumbers principal={principal} length={length} rate={rate} />
-        <DataCharts />
+        {displayData && <DataNumbers 
+                            principal={principal} 
+                            length={length} 
+                            rate={rate} /> 
+        }
+        {displayData && <DataCharts 
+                            principal={principal} 
+                            length={length} 
+                            rate={rate} /> 
+        }
         </div>
     );
 }

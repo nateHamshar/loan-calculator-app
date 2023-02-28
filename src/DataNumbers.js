@@ -1,24 +1,30 @@
 const DataNumbers = (props) => {
 
-    let principal = props.principal;
-    let length = props.length;
-    let rate = props.rate;
 
-    console.log(principal, length, rate);
+
+    let P = props.principal;
+    let T = props.length;
+    let R = props.rate;
+
+
+    let top = P * (R / 12);
+    let bottom = (1 - (1 + (R / 12))**(-12 * T));
+    let monthlyPayment = (top / bottom);
+
     return (
         <div className="dataNumbers">
             <h1 className="dataNumberHeader">How much you will pay</h1>
 
             <div className="monthlyPaymentDiv">
-                <h3 className="monthlyPayment">Monthly Payment: </h3>
-                <p className="monthlyPaymentAmount">...</p>
-                <p className="monthlyInterestAmount">...</p>
+                <h3 className="monthlyPayment">Monthly </h3>
+                <p className="monthlyPaymentAmount">Total Monthly Payment: ${monthlyPayment.toLocaleString(undefined, {maximumFractionDigits: 2})}</p>
+                <p className="monthlyInterestAmount">Interest Paid Per Month: ${}</p>
             </div>
 
             <div className="annualPaymentDiv">
-                <h3 className="annualPayment">Annual Payment: </h3>
-                <p className="annualPaymentAmount">...</p>
-                <p className="annualInterestAmount">...</p>
+                <h3 className="annualPayment">Annually</h3>
+                <p className="annualPaymentAmount">Total Annual Payments: ${(monthlyPayment * 12).toLocaleString(undefined, {maximumFractionDigits: 2})}</p>
+                <p className="annualInterestAmount">Interest Paid Per Year:</p>
             </div>
 
             <div className="totalPaymentDiv">
