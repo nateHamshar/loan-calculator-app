@@ -1,4 +1,10 @@
-const DataNumbers = () => {
+const DataNumbers = (props) => {
+
+    let principal = props.principal;
+    let length = props.length;
+    let rate = props.rate;
+
+    console.log(principal, length, rate);
     return (
         <div className="dataNumbers">
             <h1 className="dataNumberHeader">How much you will pay</h1>
