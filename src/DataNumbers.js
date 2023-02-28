@@ -1,8 +1,8 @@
 
+import DataCharts from "./DataCharts";
 import "./DataNumbers.css";
 
 const DataNumbers = (props) => {
-
 
     let P = props.principal;
     let T = props.length;
@@ -31,6 +31,12 @@ const DataNumbers = (props) => {
                 <p className="totalInterestAmount paymentText">Total Interest Paid: <span className="dollarAmount">${`0.00`}</span></p>
             </div>
 
+            <DataCharts 
+                monthlyPayment={monthlyPayment}
+                principal={P}
+                rate={R}
+                length={T}
+            />
         </div>
     );
 }

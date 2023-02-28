@@ -1,9 +1,8 @@
 import { useState } from "react";
-import DataCharts from "./DataCharts";
 import DataNumbers from "./DataNumbers"
 import "./LoanForm.css";
 
-const LoanForm = ({dataObject}) => {
+const LoanForm = () => {
 
     const [displayData, setDisplayData] = useState(false);
     const [principal, setPrincipal] = useState(0);
@@ -42,12 +41,8 @@ const LoanForm = ({dataObject}) => {
                             length={length} 
                             rate={rate} /> 
         }
-        {displayData && <DataCharts 
-                            principal={principal} 
-                            length={length} 
-                            rate={rate} /> 
-        }
         </div>
+
     );
 }
  
