@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.dataNumbers{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.dataNumbersHeader{
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: darkblue;
+}
+
+.paymentDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 80%;
+}
+
+.paymentHeader{
+    margin: .5rem;
+    font-size: 1.25rem;
+}
+
+.paymentText{
+    margin: .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.dollarAmount{
+    color: black;
+    font-weight: 900;
+    float: right;
+}

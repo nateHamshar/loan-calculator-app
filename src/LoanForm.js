@@ -30,10 +30,10 @@ const LoanForm = ({dataObject}) => {
                 </div>
                 <div className="inputDiv">
                     <label htmlFor="loanInterest" className="loanLabel">What is the interest rate?</label>
-                    <input id="loanInterest" required type="number" step=".01" className="loanInterest inputField" />
+                    <input id="loanInterest" required type="number" min="0" step=".01" className="loanInterest inputField" />
                 </div>
                 <div className="inputDiv submitDiv">
-                <input type="" id="loanSumbitButtom" className="loanSubmitButton" value="Calculate" onClick={() => {calculatePayments()}}></input>
+                <input type="button" id="loanSumbitButtom" className="loanSubmitButton" value="Calculate" onClick={() => {calculatePayments()}}></input>
                 </div>
             </form>
         </div>

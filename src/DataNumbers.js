@@ -1,36 +1,34 @@
-const DataNumbers = (props) => {
 
+import "./DataNumbers.css";
+
+const DataNumbers = (props) => {
 
 
     let P = props.principal;
     let T = props.length;
     let R = props.rate;
 
-
     let top = P * (R / 12);
     let bottom = (1 - (1 + (R / 12))**(-12 * T));
+    
     let monthlyPayment = (top / bottom);
+
 
     return (
         <div className="dataNumbers">
-            <h1 className="dataNumberHeader">How much you will pay</h1>
+            <h1 className="dataNumbersHeader">Your Projected Payments</h1>
 
-            <div className="monthlyPaymentDiv">
-                <h3 className="monthlyPayment">Monthly </h3>
-                <p className="monthlyPaymentAmount">Total Monthly Payment: ${monthlyPayment.toLocaleString(undefined, {maximumFractionDigits: 2})}</p>
-                <p className="monthlyInterestAmount">Interest Paid Per Month: ${}</p>
+            <div className="monthlyPaymentDiv paymentDiv">
+                <h3 className="monthlyPayment paymentHeader">Monthly Payment</h3>
+                <p className="monthlyPaymentAmount paymentText">Total Monthly Payment: <span className="dollarAmount">${monthlyPayment.toLocaleString(undefined, {maximumFractionDigits: 2})}</span></p>
+                <p className="monthlyInterestAmount paymentText">Interest Paid Per Month: <span className="dollarAmount">${`0.00`}</span></p>
             </div>
 
-            <div className="annualPaymentDiv">
-                <h3 className="annualPayment">Annually</h3>
-                <p className="annualPaymentAmount">Total Annual Payments: ${(monthlyPayment * 12).toLocaleString(undefined, {maximumFractionDigits: 2})}</p>
-                <p className="annualInterestAmount">Interest Paid Per Year:</p>
-            </div>
 
-            <div className="totalPaymentDiv">
-                <h3 className="totalPayment">Total Payment:</h3>
-                <p className="totalPaymentAmount">...</p>
-                <p className="totalInterestAmount">...</p>
+            <div className="totalPaymentDiv paymentDiv">
+                <h3 className="totalPayment paymentHeader">Total Payment</h3>
+                <p className="totalPaymentAmount paymentText">Total Loan Payments: <span className="dollarAmount">${`0.00`}</span></p>
+                <p className="totalInterestAmount paymentText">Total Interest Paid: <span className="dollarAmount">${`0.00`}</span></p>
             </div>
 
         </div>
