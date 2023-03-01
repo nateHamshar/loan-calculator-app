@@ -25,7 +25,13 @@ const DataCharts = ({dataArray, length}) => {
         ),
         datasets: [{
             label: "Cummulative Interest Paid",
-            data: dataArray.map((object) => object.cummulativeInterestPaid)
+            data: dataArray.map((object) => object.cummulativeInterestPaid),
+            borderColor: "darkblue"
+        },
+        {
+            label: "Principal Balance",
+            data: dataArray.map((object) => object.newBalance),
+            borderColor: "orangered"
         }],
     })
 

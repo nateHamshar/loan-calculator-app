@@ -15,7 +15,7 @@ const DataNumbers = (props) => {
 /////////////////////////////////////////////////////////
     
     const dataArray = [{
-        id: 1,
+        id: `Month: 0`,
         interestPaidFromMonthlyPayment: 0,
         amountPaidToPrincipal: 0,
         cummulativeInterestPaid: 0,
@@ -26,12 +26,12 @@ const DataNumbers = (props) => {
     let rate = R;
     let totalInterestPaid = 0;
 
-    let j = 2
+    let j = 1;
 
     for (let i = 1; i <= T * 12; i++) {    
 
         dataArray.push({
-            id: j,
+            id: `Month: ${j}`,
             interestPaidFromMonthlyPayment: (newPrincipal * (rate / 12)),
             amountPaidToPrincipal: (monthlyPayment - ((newPrincipal * (rate / 12)))),
             cummulativeInterestPaid: totalInterestPaid + (newPrincipal * (rate / 12)),
