@@ -4,6 +4,8 @@ import "./LineChart.css";
 
 const LineChart = ({dataForChart}) => {
 
+    console.log(dataForChart);
+    
     return (
         <div className="lineChartDiv">
             <Line data={dataForChart} 
