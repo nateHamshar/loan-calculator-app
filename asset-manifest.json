@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/loan-calculator-app/static/css/main.52f42f8f.css",
+    "main.js": "/loan-calculator-app/static/js/main.48281f10.js",
+    "index.html": "/loan-calculator-app/index.html",
+    "main.52f42f8f.css.map": "/loan-calculator-app/static/css/main.52f42f8f.css.map",
+    "main.48281f10.js.map": "/loan-calculator-app/static/js/main.48281f10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52f42f8f.css",
+    "static/js/main.48281f10.js"
+  ]
+}
