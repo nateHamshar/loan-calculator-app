@@ -2,3 +2,9 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+.ammortizationChart{
+    width: 95vw !important;
+    max-width: 750px !important;
+    height: 60vh !important;
+    max-height: 500px !important;
+}
