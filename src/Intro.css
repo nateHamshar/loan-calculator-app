@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 .introDiv{
     font-family: 'Quicksand', sans-serif;
@@ -9,7 +10,9 @@
 }
 
 .introHeader{
-    font-size: 1.75rem;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 300;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: darkblue;

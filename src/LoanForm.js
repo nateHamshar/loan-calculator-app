@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DataNumbers from "./DataNumbers"
+import DataNumbers from "./DataNumbers";
 import "./LoanForm.css";
 
 const LoanForm = () => {
@@ -15,6 +15,7 @@ const LoanForm = () => {
         setRate((document.getElementById("loanInterest").value) / 100);
         setDisplayData(true);
     }
+
     return (
         <div className="all">
         <div className="loanFormDiv">
@@ -25,7 +26,7 @@ const LoanForm = () => {
                 </div>
                 <div className="inputDiv">
                     <label htmlFor="loanLength" className="loanLabel">What is the length of the loan in years?</label>
-                    <input id="loanLength" required type="number" min="0" step="0.1" className="loanLengthInput inputField" />
+                    <input id="loanLength" required type="number" min="0" step="0.1" className="loanLengthInput inputField"/>
                 </div>
                 <div className="inputDiv">
                     <label htmlFor="loanInterest" className="loanLabel">What is the interest rate?</label>
@@ -42,6 +43,7 @@ const LoanForm = () => {
                             rate={rate} /> 
         }
         </div>
+
 
     );
 }

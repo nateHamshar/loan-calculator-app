@@ -1,4 +1,3 @@
-
 import DataCharts from "./DataCharts";
 import "./DataNumbers.css";
 
@@ -42,23 +41,22 @@ const DataNumbers = (props) => {
         j++;
     }
     let totalLoanPayment;
-    totalLoanPayment = (parseFloat(totalInterestPaid) + parseFloat(P)).toLocaleString("en-US");
+    totalLoanPayment = (parseFloat(totalInterestPaid) + parseFloat(P)).toLocaleString("en-US", {maximumFractionDigits: 2});
     return (
         <div className="dataNumbers">
             <h1 className="dataNumbersHeader">Your Projected Payments</h1>
 
             <div className="monthlyPaymentDiv paymentDiv">
                 <h3 className="monthlyPayment paymentHeader">Monthly Payment</h3>
-                <p className="monthlyPaymentAmount paymentText">Total Monthly Payment: <span className="dollarAmount">${monthlyPayment.toLocaleString(undefined, {maximumFractionDigits: 2})}</span></p>
+                <p className="monthlyPaymentAmount paymentText">Total Monthly Payment: <span className="dollarAmount">${monthlyPayment.toLocaleString("en-US", {maximumFractionDigits: 2, minimumFractionDigits: 2})}</span></p>
             </div>
 
 
             <div className="totalPaymentDiv paymentDiv">
-                <h3 className="totalPayment paymentHeader">Total Payment</h3>
+                <h3 className="totalPayment paymentHeader">Total Payments</h3>
                 <p className="totalPaymentAmount paymentText">Total Loan Payments: <span className="dollarAmount">${totalLoanPayment}</span></p>
-                <p className="totalInterestAmount paymentText">Total Interest Paid: <span className="dollarAmount">${totalInterestPaid.toLocaleString("en-US")}</span></p>
+                <p className="totalInterestAmount paymentText">Total Interest Paid: <span className="dollarAmount">${totalInterestPaid.toLocaleString("en-US", {maximumFractionDigits: 2, minimumFractionDigits: 2})}</span></p>
             </div>
-
             <DataCharts 
                 monthlyPayment={monthlyPayment}
                 principal={P}

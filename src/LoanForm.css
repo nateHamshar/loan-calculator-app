@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 .loanFormDiv{
-    background-color: rgba(121, 121, 121, 0.397);
-    margin: 0 1rem;
+    background-color: rgba(240, 240, 240, 0.103);
+    margin: 1rem 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.425);
 }
 
 .loanForm{
     font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin: 1rem auto;
-    height: 40vh;
+    height: 50vh;
 }
 
 .inputDiv{
@@ -22,8 +20,8 @@
     align-items: center;
     justify-content: space-evenly;
     height: 25%;
+    width: 100%;
 }
-
 .loanLabel{
     color: black;
     font-weight: 600;
@@ -31,26 +29,40 @@
 
 .inputField{
     border: none;
-    height: 35%;
+    height: 30%;
     width: 65%;
+    border: 1px solid rgba(128, 128, 128, 0.425);
+    text-align: end;
+    padding-right: 2rem;
 }
-
 .submitDiv{
-    background-color: rgba(78, 78, 110, 0.288);
+    background-color: rgba(77, 77, 77, 0.096);
+    border-top: 1px solid black
 }
 
 .loanSubmitButton{
-    border: none;
+    border: 2px solid white;
+    background-color: darkblue;
+    color: white;
+    font: "Quicksand", sans-serif;
     width: 40%;
     height: 60%;
-    border-radius: 1rem;
+    border-radius: 5%;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: 800;
     font-size: 1rem;
 }
 
-.loanSubmitButton:hover,
-.loanSubmitButton:active{
+.loanSubmitButton:hover{
     cursor: pointer;
+    color: darkblue;
+    background-color: white;
+    border: 1px solid darkblue;
+    transition-duration: .25s;
+}
+
+.loanSubmitButton:active{
+    width: 38%;
+    height: 60%;
 }

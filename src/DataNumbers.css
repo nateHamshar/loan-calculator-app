@@ -27,12 +27,15 @@
 .paymentHeader{
     margin: .5rem;
     font-size: 1.25rem;
+    color: orangered ;
+    margin-left: -.5rem;
 }
 
 .paymentText{
     margin: .5rem;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.548);
+    color: rgb(0, 0, 0);
+
 }
 
 .dollarAmount{
