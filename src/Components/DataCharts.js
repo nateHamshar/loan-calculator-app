@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
-import LineChart from "./LineChart";
-import "./DataCharts.css";
+import LineChart from "./LineChart.js";
+import "../cssFiles/DataCharts.css";
 
 
 const DataCharts = ({dataArray}) => {

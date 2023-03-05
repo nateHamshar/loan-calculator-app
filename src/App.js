@@ -1,6 +1,6 @@
-import './App.css';
-import Intro from './Intro';
-import LoanForm from './LoanForm';
+import './cssFiles/App.css';
+import Intro from './Components/Intro';
+import LoanForm from './Components/LoanForm';
 
 function App() {
 

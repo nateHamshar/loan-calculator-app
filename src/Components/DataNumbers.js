@@ -1,5 +1,5 @@
 import DataCharts from "./DataCharts";
-import "./DataNumbers.css";
+import "../cssFiles/DataNumbers.css";
 
 const DataNumbers = (props) => {
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import DataNumbers from "./DataNumbers";
-import "./LoanForm.css";
+import "../cssFiles/LoanForm.css";
 
 const LoanForm = () => {
 
